@@ -1,0 +1,22 @@
+button{
+  width: auto;
+  height: 30px;
+  background: black;
+  color: white;
+  outline: none;
+  border: none;
+}
+button:hover{
+  background: deeppink;
+}
+.input_update{
+  display: none;
+
+}
+.eleve_li{
+  cursor: pointer;
+  width: 100px;
+}
+.input_update_accept{
+  display: none;
+}

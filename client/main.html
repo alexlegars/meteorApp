@@ -1,0 +1,36 @@
+<head>
+  <title>Pokedex</title>
+</head>
+
+<body>
+  <h1>Welcome to SuperAppMeteor !</h1>
+
+  {{> info}}
+</body>
+
+
+
+<template name="info">
+  <h2>Si senior</h2>
+
+
+
+
+    <input type="text" name="generetaeur" id="nom_eleve" placeholder="Jackie">
+    <button type="button" name="generetaeur" id="add_eleve">add</button>
+  <ul>
+      {{#each toutlemonde}}
+        <li class="eleve_li eleve_li-{{_id}}" >{{name}}
+            <ul>
+                {{#each sortileges}}
+                        <li class="sortilege_li sortilege_li-{{_id}}" >{{name}}</li>
+                {{/each}}
+
+            </ul>
+        </li>
+          <input type="text" class="input_update input_update-{{_id}}"  >
+          <button type="button" class="input_update_accept input_update_accept-{{_id}}" value="">modif</button>
+          <button type="button" class="delete_eleve delete_eleve-{{_id}}">delete</button>
+      {{/each}}
+  </ul>
+</template>
